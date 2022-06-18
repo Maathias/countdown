@@ -1,0 +1,16 @@
+.login-withdc {
+	display: inline-block;
+	padding: 0.4em 1em;
+	font-weight: bold;
+	background-color: #5662F6;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.dc-uname,.dc-discr{
+	font-family: 'Nunito';
+}
+
+.dc-discr {
+	font-style: italic;
+}

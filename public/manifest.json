@@ -1,0 +1,15 @@
+{
+	"short_name": "Ile do 21:37",
+	"name": "Countdown",
+	"description": "Countdown Clock",
+	"icons": [
+		{
+			"src": "",
+			"type": "image/png",
+			"sizes": "192x192"
+		}
+	],
+	"start_url": "/",
+	"display": "standalone",
+	"scope": "/"
+}

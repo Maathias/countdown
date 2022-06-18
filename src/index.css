@@ -1,0 +1,108 @@
+body {
+	text-align: center;
+	vertical-align: middle;
+	margin: 0px;
+	/* cursor: url('media/cursor.png'), auto; */
+	/* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+	/* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+	/* font-family: 'Courier New', Courier, monospace; */
+	/* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+	font-family: Roboto, 'Segoe UI', Verdana;
+}
+
+/* Roboto */
+/* Roboto Mono */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800');
+
+:root {
+	--color-light-main-primary: #f4bc8d;
+	--color-dark-main-secondary: #774b27;
+	/* --color-light-main-primary: #122140;
+	--color-dark-main-secondary: hsl(220, 56%, 60%); */
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: inherit;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #fefefe10;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #fefefe20;
+}
+
+a,
+a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.clear {
+	clear: both;
+}
+
+.grecaptcha-badge {
+	display: none;
+}
+
+.wrapper {
+	transition: background-color 0.2s;
+	/* background-color: hsl(0deg 0% 88%); */
+	color: hsl(213, 9%, 25%);
+	height: 100vh;
+	/* overflow-y: auto; */
+	overflow-x: hidden;
+	position: relative;
+
+	background-image: url('./media/funky-lines.png');
+	/* background-blend-mode: color; */
+}
+
+.wrapper > * {
+	--margin: 1rem;
+	transition: inherit;
+	background-color: hsl(0, 0%, 91%);
+	margin: var(--margin) 1.5rem;
+	border-radius: 3px;
+	position: relative;
+}
+
+.wrapper > .container {
+	height: calc(100vh - ((3 * var(--margin)) + 2rem));
+	overflow-y: auto;
+}
+
+@media screen and (max-width: 990px) {
+	.wrapper > * {
+		--margin: 0.7rem;
+		margin: var(--margin) 0.7rem;
+	}
+}
+
+/* ///////// */
+/* Dark Mode */
+
+.wrapper.dark {
+	background-color: hsl(0, 2%, 12%);
+	background-blend-mode: color-burn;
+}
+
+.wrapper.dark > * {
+	background-color: hsl(0deg 1% 16%);
+	color: hsl(180deg 8% 90%);
+}
